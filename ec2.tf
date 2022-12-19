@@ -24,7 +24,7 @@ resource "aws_instance" "web" {
     connection {
       type = "ssh"
       host = self.public_ip
-      user = "ec2-user"
+      user = "ubuntu"
       private_key = "${file("./pswain.pem")}"
     }  
   }
